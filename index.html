@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather app</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <style>
+        body {
+            background: url(bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" id="search-input" class="form-control" placeholder="Enter a City Name for Weather ...">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-danger" onclick="searchbtn()">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="icon" src="" alt="">
+            <h1 id="city-name">Dhakas</h1>
+            <h3><span id="current_temperature"></span>&deg;C</h3>
+            <h1 id="weather_info" class="lead">Rain</h1>
+        </div>
+    </div>
+    <!--  JavaScript -->
+    <script src="app.js"></script>
+    <!-- <script src="async.js"></script> -->
+</body>
+
+</html>
